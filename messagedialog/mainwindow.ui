@@ -14,8 +14,98 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget"/>
-  <widget class="QMenuBar" name="menubar"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuTask">
+    <property name="title">
+     <string>Task</string>
+    </property>
+    <addaction name="actionOpen"/>
+    <addaction name="actionColor"/>
+    <addaction name="actionFont"/>
+   </widget>
+   <widget class="QMenu" name="menuDialog">
+    <property name="title">
+     <string>Dialog</string>
+    </property>
+    <addaction name="actionDialogFix"/>
+    <addaction name="actionDialogNotFix"/>
+   </widget>
+   <widget class="QMenu" name="menuMsg">
+    <property name="title">
+     <string>Msg</string>
+    </property>
+    <addaction name="actionCritical"/>
+    <addaction name="actionInformation"/>
+    <addaction name="actionQuestion"/>
+    <addaction name="actionWarnning"/>
+    <addaction name="actionMyMsg"/>
+   </widget>
+   <addaction name="menuTask"/>
+   <addaction name="menuDialog"/>
+   <addaction name="menuMsg"/>
+  </widget>
   <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionOpen">
+   <property name="text">
+    <string>Open</string>
+   </property>
+  </action>
+  <action name="actionDialogFix">
+   <property name="text">
+    <string>DialogFix</string>
+   </property>
+  </action>
+  <action name="actionDialogNotFix">
+   <property name="text">
+    <string>DialogNotFix</string>
+   </property>
+  </action>
+  <action name="actionCritical">
+   <property name="text">
+    <string>Critical</string>
+   </property>
+   <property name="shortcutContext">
+    <enum>Qt::ApplicationShortcut</enum>
+   </property>
+  </action>
+  <action name="actionInformation">
+   <property name="text">
+    <string>Information</string>
+   </property>
+  </action>
+  <action name="actionQuestion">
+   <property name="text">
+    <string>Question</string>
+   </property>
+  </action>
+  <action name="actionWarnning">
+   <property name="text">
+    <string>Warnning</string>
+   </property>
+  </action>
+  <action name="actionMyMsg">
+   <property name="text">
+    <string>MyMsg</string>
+   </property>
+  </action>
+  <action name="actionColor">
+   <property name="text">
+    <string>Color</string>
+   </property>
+  </action>
+  <action name="actionFont">
+   <property name="text">
+    <string>Font</string>
+   </property>
+  </action>
  </widget>
  <resources/>
  <connections/>
